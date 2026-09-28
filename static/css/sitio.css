@@ -146,6 +146,10 @@ h1, h2, h3, p { margin: 0; }
   color: #fff; font: 600 12px ui-monospace, "SF Mono", Menlo, monospace; letter-spacing: .04em;
 }
 .tally { width: 8px; height: 8px; border-radius: 2px; background: var(--rojo); }
+/* Solo se ve la etiqueta de la foto activa: la saliente se apaga rápido y la
+   entrante aparece al terminar el fundido, para que no se encimen. */
+.toma .toma-etiqueta { opacity: 0; transition: opacity .15s; }
+.toma.activa .toma-etiqueta { opacity: 1; transition: opacity .3s .9s; }
 .carrusel-flecha {
   position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%;
   border: 0; background: rgba(0, 0, 0, .45); color: #fff; font-size: 26px; line-height: 1; cursor: pointer;

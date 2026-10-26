@@ -230,9 +230,9 @@ h1, h2, h3, p { margin: 0; }
 /* ---------- gira ---------- */
 .gira { padding: 140px 0; text-align: center; }
 .gira .hero-sub { margin-bottom: 48px; }
-.cifras { display: flex; justify-content: center; gap: clamp(32px, 8vw, 96px); margin-bottom: 64px; }
-.cifras b { display: block; font-size: clamp(48px, 7vw, 72px); font-weight: 700; letter-spacing: -0.04em; line-height: 1; }
-.cifras span { color: var(--tinta-osc-2); font-size: 15px; }
+.cifras { display: flex; justify-content: center; gap: clamp(32px, 9vw, 128px); margin: 56px 0 80px; }
+.cifras b { display: block; font-size: clamp(64px, 11vw, 128px); font-weight: 700; letter-spacing: -0.04em; line-height: 1; }
+.cifras span { display: block; margin-top: 8px; color: var(--tinta-osc-2); font-size: 17px; }
 .gira-fotos { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
 .gira-fotos img { width: 100%; height: 520px; object-fit: cover; border-radius: var(--radio-xl); }
 .gira-fotos.tres { grid-template-columns: repeat(3, 1fr); margin-top: 20px; }
@@ -242,7 +242,10 @@ h1, h2, h3, p { margin: 0; }
   .gira-fotos img { height: 360px; }
   .gira-fotos.tres { grid-template-columns: 1fr; }
   .gira-fotos.tres img { height: 240px; }
-  .cifras { gap: 28px; }
+  .cifras { gap: 12px; }
+  .cifras > div { flex: 1; }
+  .cifras b { font-size: 60px; }
+  .cifras span { font-size: 14px; }
 }
 
 /* ---------- galería ---------- */
